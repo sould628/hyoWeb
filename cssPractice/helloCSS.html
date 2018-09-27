@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB - CSS</title>
+  <meta charset="utf-8">
+  <!--css니까  css에 맞춰서 처리하렴-->
+  <!--style 이니까 head에 넣는게 좋겠지?-->
+  <!--이부분은 css이다를 알려주는방법-->
+  <style>
+    a {
+      color:black;
+      text-decoration-line:none;
+    }
+    .saw{
+      color:grey;
+    }
+    #active{
+      color:red;
+    }
+    .unseen{
+      color:black;
+    }        
+    h1{
+      font-size: large;
+      text-align: center;
+      text-decoration-line: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="CSSBox.html" class="unseen" id="active">CSSBox</a>
+  <h1>CSS를 사용하는 이유</h1>
+  <ol>
+    <li>html은 정보만을 담게 만들고 싶다.(html 태그들은 디자인이 아닌 정보를 나타내는 태그들이기를 바란다)</li>
+    <li>유지보수가 쉽다.</li>
+  </ol>
+  <h1>CSS임을 알리는 방법</h1>
+  <ol>
+    <li><p>style 태그 사용하기<br>
+    style 구문 안에 선택자(selector)를 사용해 어떤 태그를 꾸밀지 정해주고 어떠한 효과(declaration)를 줄지를 결정한다. 효과는 속성(property: color, text-decoration과 같은 구문)과 값(value red, underline과 같은 구문)으로 이루어져 있다. </p></li>
+    <li><p>html 태그에 직접 css 코드 삽입하기<br>
+      color:red 등을 사용할 수 있다. 이 때 인터프리터가 html 코드인지 css인지 알 수 없다.<br>
+      이 때 style 이라는 속성을 사용하면 브라우저가 css 문법에 따라 해석하여 적용한다<br>
+      Style="css 속성"
+    </p></li>
+  </ol>
+  <h2>css  효과들</h2>
+  <ul>
+    <li>
+    <h3>css 리스트들</h3>
+      <ul>
+        <li style="color:red">color:원하는 색깔</li>
+        <li style="text-decoration:underline; color:red">text-decoration: 원하는 텍스트 꾸밈 효과</li>
+      </ul>
+    </li>
+    <li>
+    <h3>class id (html 속성이다)</h3>
+      <p>
+        <ul>
+          <li><p>
+            id(#id)는 페이지 내에 하나만 적용될 수 있다. 이후 동일 id는 무시. class(.class)는 일반적인 태그 선택자보다는 구체적이고 id보다는 포괄적임
+
+          </p></li>
+        </ul>
+      </p>
+    </li>
+  </ul>
+  
+  </body>
+  </html>
